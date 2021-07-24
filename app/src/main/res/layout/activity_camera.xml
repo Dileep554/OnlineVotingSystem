@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back2"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="10dp"
+        android:text="Place your face in middle of screen then click on button and hold for a second" />
+
+    <com.wonderkiln.camerakit.CameraView
+        android:layout_below="@+id/intro"
+        android:id="@+id/camera_view"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="400dp"
+        app:ckFacing="front">
+
+    </com.wonderkiln.camerakit.CameraView>
+
+    <com.onlie.voting.onlinevotingsystem.Helper.GraphicOverlay
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/graphic_overlay"
+        android:layout_height="400dp"
+        android:layout_below="@+id/intro">
+
+    </com.onlie.voting.onlinevotingsystem.Helper.GraphicOverlay>
+
+    <Button
+        android:layout_below="@+id/graphic_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detect_face_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:text="Detect Face"
+        ></Button>
+
+    <Button
+        android:layout_below="@+id/graphic_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/instantvote"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:text="Vote Now"
+        android:visibility="invisible"
+        ></Button>
+
+</RelativeLayout>

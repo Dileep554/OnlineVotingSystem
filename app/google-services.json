@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "553587404421",
+    "firebase_url": "https://voting-system-92e8b-default-rtdb.firebaseio.com",
+    "project_id": "voting-system-92e8b",
+    "storage_bucket": "voting-system-92e8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553587404421:android:3b6e15abcfffdd38cec3ec",
+        "android_client_info": {
+          "package_name": "com.onlie.voting.onlinevotingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553587404421-fljen375vhnfkf7u3a3gmpvq8g4dhu48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7fb7oSG-R2Kj6lgD0G2pUe52P7bpH9ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553587404421-fljen375vhnfkf7u3a3gmpvq8g4dhu48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

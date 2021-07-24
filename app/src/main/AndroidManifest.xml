@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onlie.voting.onlinevotingsystem">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.onlie.voting.onlinevotingsystem.CameraActivity">
+            <meta-data
+                android:name="com.google.firebase:firebase-ml-vision.DEPENDENCIES"
+                android:value="face" />
+        </activity>
+        <activity
+            android:name="com.onlie.voting.onlinevotingsystem.FinalActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name="com.onlie.voting.onlinevotingsystem.UserUpdatePassword" />
+        <activity android:name="com.onlie.voting.onlinevotingsystem.SelectParty" />
+        <activity android:name="com.onlie.voting.onlinevotingsystem.VerifiyId" />
+        <activity
+            android:name="com.onlie.voting.onlinevotingsystem.HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name="com.onlie.voting.onlinevotingsystem.RegisterActivity" />
+        <activity android:name="com.onlie.voting.onlinevotingsystem.LoginActivity" />
+        <activity android:name="com.onlie.voting.onlinevotingsystem.welcomeActivity" />
+        <activity android:name="com.onlie.voting.onlinevotingsystem.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

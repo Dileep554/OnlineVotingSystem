@@ -1,0 +1,2 @@
+rootProject.name='OnlineVotingSystem'
+include ':app'
